@@ -5,7 +5,7 @@ WEBHOOK_URL = [os.getenv('WEBHOOK_MAIN'), os.getenv('WEBHOOK_OTHER1')]
 for url in WEBHOOK_URL:
     hook = Webhook(url) 
 
-    hook.send('**@everyone AOR-1**')
+    hook.send('**@everyone**')
     
     image2_path = 'cs-aor1-nova-obavestenja.png' 
 
