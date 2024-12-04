@@ -8,9 +8,10 @@ for url in WEBHOOK_URL:
     hook = Webhook(url)
 
     embed = Embed(
-        description="**@everyone**\n\n>>> **[CS link](https://cs.elfak.ni.ac.rs/nastava/)**",
+        description="**[CS link](https://cs.elfak.ni.ac.rs/nastava/)**",
         color=0x3498DB
     )
-    embed.set_image(url=f"attachment://{image2_path}")  
 
-    hook.send(file=File(image2_path, name='cs-aor1-nova-obavestenja.png'), embed=embed)
+    embed.set_image(url="attachment://cs-aor1-nova-obavestenja.png")
+    file = File(image2_path, name="cs-aor1-nova-obavestenja.png")
+    hook.send("**@everyone 📢 AOR-1**", embed=embed, file=file)
