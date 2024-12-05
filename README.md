@@ -1,1 +1,1 @@
-**Web scraper za [ Arhitektura i organizacija računara 1 ]**
+**Web scraper za Arhitekturu i organizaciju računara 1**
