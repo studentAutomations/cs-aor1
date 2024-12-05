@@ -14,4 +14,4 @@ for url in WEBHOOK_URL:
 
     embed.set_image(url="attachment://cs-aor1-nova-obavestenja.png")
     file = File(image2_path, name="cs-aor1-nova-obavestenja.png")
-    hook.send("**@everyone 📢 AOR-1**", embed=embed, file=file)
+    hook.send("@everyone 📢 AOR-1", embed=embed, file=file)
