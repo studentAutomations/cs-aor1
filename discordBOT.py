@@ -3,7 +3,7 @@ from dhooks import Webhook, Embed, File
 
 image2_path = 'cs-aor1-nova-obavestenja.png'
 
-WEBHOOK_URL = [os.getenv('WEBHOOK_MAIN'), os.getenv('WEBHOOK_OTHER1')]
+WEBHOOK_URL = [os.getenv('WEBHOOK_MAIN')]
 for url in WEBHOOK_URL:
     hook = Webhook(url)
 
